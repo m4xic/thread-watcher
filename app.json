@@ -1,0 +1,44 @@
+{
+  "name": "Thread Watcher",
+  "description": "This app allows you to watch a Twitter thread for replies from the original poster.",
+  "keywords": ["twitter", "airtable", "thread", "watcher"],
+  "website": "https://chun.si",
+  "repository": "https://github.com/m4xic/thread-watcher",
+  "env": {
+    "THREADWATCH_AT_BASE": {
+      "description": "The ID of the Airtable base you will store the thread information in."
+    },
+    "THREADWATCH_AT_TABLE": {
+      "description": "The ID of the Airtable table you will store the thread information in."
+    },
+    "THREADWATCH_AT_API_KEY": {
+      "description": "Your Airtable API key."
+    },
+    "THREADWATCH_TW_CONSUMER_KEY": {
+      "description": "Twitter API credentials."
+    },
+    "THREADWATCH_TW_CONSUMER_SECRET": {
+      "description": "Twitter API credentials."
+    },
+    "THREADWATCH_TW_ACCESS_TOKEN": {
+      "description": "Twitter API credentials (generate using Oauth.py)."
+    },
+    "THREADWATCH_TW_ACCESS_TOKEN_SECRET": {
+      "description": "Twitter API credentials (generate using Oauth.py)."
+    },
+    "THREADWATCH_DM_REFRESH": {
+      "description": "Number of seconds between refreshes of the DM inbox (Twitter enforces a 15 per 15 min ratelimit)",
+      "value": "120"
+    },
+    "THREADWATCH_THREAD_CHECK": {
+      "description": "Number of DM inbox refreshes between thread checks",
+      "value": "10"
+    }
+  },
+  "stack": "heroku-20",
+  "buildpacks": [
+    {
+      "url": "heroku/python-3.10.5"
+    }
+  ]
+}
