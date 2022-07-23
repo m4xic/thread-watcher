@@ -1,0 +1,4 @@
+airtable==0.4.8
+python-dotenv==0.20.0
+python_dateutil==2.8.2
+tweepy==4.10.0
