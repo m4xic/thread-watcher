@@ -2,6 +2,8 @@
 
 A Twitter bot that will watch a thread for a reply from OP. Useful for keeping track of developing news or stories with update threads.
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ---
 
 > **⚠️ I made this for myself and it's likely to break if you use it.**
